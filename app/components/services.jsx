@@ -13,7 +13,7 @@ export default function Services() {
         Multiple Web Development Projects
       </p>
 
-      <div className="grid grid-cols-4 gap-6 my-10">
+      <div className="grid grid-cols-auto gap-6 my-10">
         {serviceData.map(({ icon, title, description, link }, index) => (
           <div
             key={index}
