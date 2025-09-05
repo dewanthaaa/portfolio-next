@@ -18,17 +18,20 @@ export default function Footer() {
         <p>2025. Dewantha Simbolon. All Rights Reserved</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
-            <a target="_blank" href="">
+            <a target="_blank" href="https://github.com/dewanthaaa">
               Github
             </a>
           </li>
           <li>
-            <a target="_blank" href="">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/dewantha-surya-octovianus-simbolon/"
+            >
               Linkedin
             </a>
           </li>
           <li>
-            <a target="_blank" href="">
+            <a target="_blank" href="https://www.instagram.com/dewabukandewa/">
               Instagram
             </a>
           </li>
