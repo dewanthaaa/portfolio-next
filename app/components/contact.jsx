@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
 
 export default function Contact() {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "01d2e548-859d-487e-af7e-134ceaee58c1");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div
       id="contact"
@@ -16,19 +41,21 @@ export default function Contact() {
         feedback, feel free to send me message by using the from below.
       </p>
 
-      <form className="max-w-2xl mx-auto">
+      <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
         <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
           <input
             type="text"
             placeholder="Enter Your Name"
             required
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            name="name"
           />
           <input
             type="email"
             placeholder="Enter Your Email"
             required
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            name="email"
           />
         </div>
 
@@ -37,6 +64,7 @@ export default function Contact() {
           placeholder="Enter Your Message"
           required
           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+          name="message"
         ></textarea>
 
         <button
@@ -47,7 +75,7 @@ export default function Contact() {
           <Image src={assets.right_arrow_white} alt="" className="w-4" />
         </button>
 
-        <p className="mt-4">Sending...</p>
+        <p className="mt-4">{result}</p>
       </form>
     </div>
   );
