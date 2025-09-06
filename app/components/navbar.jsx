@@ -39,6 +39,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
         <a href="#top">
           <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
+            alt=""
             className="w-35 cursor-pointer mr-14"
           />
         </a>
