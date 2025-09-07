@@ -26,6 +26,7 @@ export default function Footer({ isDarkMode }) {
         <p>2025. Dewantha Simbolon. All Rights Reserved</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
+            <Image src={assets.github_logo} />
             <a target="_blank" href="https://github.com/dewanthaaa">
               Github
             </a>
