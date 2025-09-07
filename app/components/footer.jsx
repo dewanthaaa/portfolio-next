@@ -25,13 +25,14 @@ export default function Footer({ isDarkMode }) {
       <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
         <p>2025. Dewantha Simbolon. All Rights Reserved</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-          <li>
-            <Image src={assets.github_logo} />
+          <li className="flex items-center gap-2">
+            <Image src={assets.github_logo} alt="github logo" />
             <a target="_blank" href="https://github.com/dewanthaaa">
               Github
             </a>
           </li>
-          <li>
+          <li className="flex items-center gap-2">
+            <Image src={assets.linkedin_logo} alt="linkedin logo" />
             <a
               target="_blank"
               href="https://www.linkedin.com/in/dewantha-surya-octovianus-simbolon/"
@@ -39,7 +40,8 @@ export default function Footer({ isDarkMode }) {
               Linkedin
             </a>
           </li>
-          <li>
+          <li className="flex items-center gap-2">
+            <Image src={assets.instagram_logo} />
             <a target="_blank" href="https://www.instagram.com/dewabukandewa/">
               Instagram
             </a>
