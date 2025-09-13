@@ -102,7 +102,7 @@ export default function About({ isDarkMode }) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 0.6 }}
-            className="flex items-center gap-3 sm:gap-5"
+            className="grid grid-cols-8 gap-4 sm:gap-5 max-w-4xl mx-auto"
           >
             {toolsData.map((tool, index) => (
               <motion.li

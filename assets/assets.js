@@ -6,11 +6,22 @@ import edu_icon from "./edu-icon.png";
 import edu_icon_dark from "./edu-icon-dark.png";
 import project_icon from "./project-icon.png";
 import project_icon_dark from "./project-icon-dark.png";
+import html from "./html.svg";
+import css from "./css.svg";
+import javascript from "./javascript.svg";
+import typescript from "./typescript.svg";
+import php from "./php.png";
+import nodejs from "./nodejs.svg";
+import react from "./react.svg";
+import next from "./next.svg";
+import express from "./express.svg";
+import prisma from "./prisma.svg";
+import mysql from "./mysql.svg";
+import mongodb from "./mongodb.png";
+import supabase from "./supabase.svg";
 import vscode from "./vscode.png";
-import firebase from "./firebase.png";
 import figma from "./figma.png";
 import git from "./git.png";
-import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo-2.png";
 import logo_dark from "./logo-dark-2.png";
@@ -38,6 +49,7 @@ import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import github_logo from "./github-logo.svg";
 import linkedin_logo from "./linkedin-logo.svg";
+import linkedin_logo_dark from "./linkedin-dark.svg";
 import instagram_logo from "./instagram-logo.svg";
 
 export const assets = {
@@ -49,11 +61,22 @@ export const assets = {
   edu_icon_dark,
   project_icon,
   project_icon_dark,
+  html,
+  css,
+  javascript,
+  typescript,
+  php,
+  nodejs,
+  react,
+  next,
+  express,
+  prisma,
+  mysql,
+  mongodb,
+  supabase,
   vscode,
-  firebase,
   figma,
   git,
-  mongodb,
   right_arrow_white,
   logo,
   logo_dark,
@@ -81,6 +104,7 @@ export const assets = {
   right_arrow_bold_dark,
   github_logo,
   linkedin_logo,
+  linkedin_logo_dark,
   instagram_logo,
 };
 
@@ -160,9 +184,20 @@ export const infoList = [
 ];
 
 export const toolsData = [
-  assets.vscode,
-  assets.firebase,
+  assets.html,
+  assets.css,
+  assets.javascript,
+  assets.typescript,
+  assets.php,
+  assets.nodejs,
+  assets.react,
+  assets.next,
+  assets.express,
+  assets.prisma,
+  assets.mysql,
   assets.mongodb,
+  assets.supabase,
+  assets.vscode,
   assets.figma,
   assets.git,
 ];
