@@ -110,23 +110,31 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
+    id: "sipetik",
+    title: "Sipetik",
+    description: "Employee Web App",
     bgImage: "/work-1.png",
+    detailUrl: "/work/sipetik",
+    fullDescription: "...",
+    technologies: ["Javascript, Node.js, Express, Sequelize, Sass"],
+    githubLink: "https://...",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    id: "inventrix",
+    title: "Inventrix",
+    description: "Inventory Web App",
     bgImage: "/work-2.png",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    id: "sixtap",
+    title: "Sixtap",
+    description: "Presence Web App",
     bgImage: "/work-3.png",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    id: "dewa-learning",
+    title: "Dewa Learning",
+    description: "LMS Web App",
     bgImage: "/work-4.png",
   },
 ];

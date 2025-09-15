@@ -15,7 +15,7 @@ export default function Footer({ isDarkMode }) {
         <div className="w-max flex items-center gap-2 mx-auto">
           <Image
             src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon}
-            alt=""
+            alt="mail"
             className="w-6"
           />
           dewantha.105@gmail.com
@@ -46,7 +46,7 @@ export default function Footer({ isDarkMode }) {
             </a>
           </li>
           <li className="flex items-center gap-2">
-            <Image src={assets.instagram_logo} />
+            <Image src={assets.instagram_logo} alt="instagram logo" />
             <a target="_blank" href="https://www.instagram.com/dewabukandewa/">
               Instagram
             </a>
