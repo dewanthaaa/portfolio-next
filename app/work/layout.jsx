@@ -30,7 +30,11 @@ export default function WorkLayout({ children }) {
 
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <Navbar
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
+        isDetailPage={true}
+      />
       <main className="min-h-screen pt-20">{children}</main>
       <Footer isDarkMode={isDarkMode} />
     </>

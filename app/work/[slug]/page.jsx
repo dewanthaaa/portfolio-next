@@ -24,7 +24,10 @@ export default function SipetikDetail() {
             alt={project.title}
             width={600}
             height={600}
-            className="rounded-lg w-full object-cover"
+            className="rounded-lg max-w-full object-cover"
+            onError={(e) => {
+              console.error(`Failed to load image: ${project.bgImage}`);
+            }}
           />
         </div>
         <div className="md:w-1/2">

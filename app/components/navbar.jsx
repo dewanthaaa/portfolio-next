@@ -1,8 +1,9 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
-export default function Navbar({ isDarkMode, setIsDarkMode }) {
+export default function Navbar({ isDarkMode, setIsDarkMode, isDetailPage }) {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
 
@@ -23,6 +24,14 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
     });
   }, []);
 
+  const navigationLinks = [
+    { href: "top", label: "Home" },
+    { href: "about", label: "About Me" },
+    { href: "services", label: "Services" },
+    { href: "work", label: "My Work" },
+    { href: "contact", label: "Contact Me" },
+  ];
+
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
@@ -36,13 +45,23 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
             : ""
         }`}
       >
-        <a href="#top">
-          <Image
-            src={isDarkMode ? assets.logo_dark : assets.logo}
-            alt=""
-            className="w-35 cursor-pointer mr-14"
-          />
-        </a>
+        {isDetailPage ? (
+          <Link href="/">
+            <Image
+              src={isDarkMode ? assets.logo_dark : assets.logo}
+              alt=""
+              className="w-35 cursor-pointer mr-14"
+            />
+          </Link>
+        ) : (
+          <a href="#top">
+            <Image
+              src={isDarkMode ? assets.logo_dark : assets.logo}
+              alt=""
+              className="w-35 cursor-pointer mr-14"
+            />
+          </a>
+        )}
 
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
@@ -51,31 +70,22 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
               : "bg-white/50 shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
           } `}
         >
-          <li>
-            <a className="font-Ovo" href="#top">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="font-Ovo" href="#about">
-              About Me
-            </a>
-          </li>
-          <li>
-            <a className="font-Ovo" href="#services">
-              Services
-            </a>
-          </li>
-          <li>
-            <a className="font-Ovo" href="#work">
-              My Work
-            </a>
-          </li>
-          <li>
-            <a className="font-Ovo" href="#contact">
-              Contact Me
-            </a>
-          </li>
+          {navigationLinks.map((link) => (
+            <li key={link.href}>
+              {isDetailPage ? (
+                <Link
+                  href={`/#${link.href}`}
+                  className="font-Ovo hover:text-blue-600"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a className="font-Ovo" href={`#${link.href}`}>
+                  {link.label}
+                </a>
+              )}
+            </li>
+          ))}
         </ul>
 
         <div className="flex items-center gap-4">
@@ -86,17 +96,31 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
               className="w-6"
             />
           </button>
-          <a
-            href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
-          >
-            Contact{" "}
-            <Image
-              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
-              alt="logo"
-              className="w-3"
-            />
-          </a>
+          {isDetailPage ? (
+            <Link
+              href="/#contact"
+              className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
+            >
+              Contact{" "}
+              <Image
+                src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
+                alt="logo"
+                className="w-3"
+              />
+            </Link>
+          ) : (
+            <a
+              href="#contact"
+              className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
+            >
+              Contact{" "}
+              <Image
+                src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
+                alt="logo"
+                className="w-3"
+              />
+            </a>
+          )}
 
           <button className="block md:hidden ml-3" onClick={openMenu}>
             <Image
@@ -120,31 +144,27 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
             />
           </div>
 
-          <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#top">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#about">
-              About Me
-            </a>
-          </li>
-          <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#services">
-              Services
-            </a>
-          </li>
-          <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#work">
-              My Work
-            </a>
-          </li>
-          <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#contact">
-              Contact Me
-            </a>
-          </li>
+          {navigationLinks.map((link) => {
+            <li key={link.href}>
+              {isDetailPage ? (
+                <Link
+                  href={`/#${link.href}`}
+                  className="font-Ovo"
+                  onClick={closeMenu}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  className="font-Ovo"
+                  onClick={closeMenu}
+                  href={`#${link.href}`}
+                >
+                  {link.label}
+                </a>
+              )}
+            </li>;
+          })}
         </ul>
       </nav>
     </>

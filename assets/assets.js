@@ -113,9 +113,11 @@ export const workData = [
     id: "sipetik",
     title: "Sipetik",
     description: "Employee Web App",
-    bgImage: "/work-1.png",
+    bgImage: "/sipetik-thumbnail.png",
     detailUrl: "/work/sipetik",
-    fullDescription: "...",
+    fullDescription:
+      "Sipetik is a web application developed to manage employee data at the Ministry of Foreign Affairs of Indonesia, specifically within the IT and Communications Center, Personnel, and Official Documents Division. It provides features for managing detailed employee information such as leave, allowances, and training history, as well as an interactive dashboard for statistical insights. The project was completed during my internship as part of a three-person team, where I contributed as the backend developer.",
+    screenshots: [""],
     technologies: ["Javascript, Node.js, Express, Sequelize, Sass"],
     githubLink: "https://...",
   },
@@ -123,19 +125,34 @@ export const workData = [
     id: "inventrix",
     title: "Inventrix",
     description: "Inventory Web App",
-    bgImage: "/work-2.png",
+    bgImage: "/inventrix-thumbnail.png",
+    detailUrl: "/work/inventrix",
+    fullDescription:
+      "Inventrix is a web application designed to manage online borrowing of school inventory items such as projectors, cables, and other learning equipment. It features an admin dashboard for managing items, monitoring student borrowings, and confirming requests, as well as a student dashboard to view available items and track borrowing history. The project was developed as a final assignment for a Software Project course by a three-person team, where I contributed as the backend developer.",
+    technologies: ["Javascript, Node.js, Express, Sequelize, Sass"],
+    githubLink: "https://...",
   },
   {
     id: "sixtap",
     title: "Sixtap",
     description: "Presence Web App",
-    bgImage: "/work-3.png",
+    bgImage: "/sixtap-thumbnail.png",
+    detailUrl: "/work/sixtap",
+    fullDescription:
+      "Sixtap is a web-based application that provides automated attendance and transaction services using RFID cards for students of SMK Negeri 6 Jakarta. Developed by a three-person team, I contributed as the backend developer responsible for the attendance system. Key features include RFID-based attendance processing, role-based dashboards (RBAC), and a backend system for managing student data. This project also involved unit testing with Vitest and bottom-up integration testing with Postman, and it served as my undergraduate thesis project.",
+    technologies: ["Javascript, Node.js, Express, Sequelize, Sass"],
+    githubLink: "https://...",
   },
   {
     id: "dewa-learning",
     title: "Dewa Learning",
     description: "LMS Web App",
-    bgImage: "/work-4.png",
+    bgImage: "/dewa-learning-thumbnail.png",
+    detailUrl: "/work/dewa-learning",
+    fullDescription:
+      "Dewa Learning is a web-based learning management system that I developed independently as my first fullstack project, handling both frontend and backend. It features RBAC to separate manager and user roles—managers can manage classes and learning content (videos and texts), while users can access enrolled classes and study materials online. The system also integrates a payment simulation using Midtrans, enabling users to simulate class enrollment and transactions.",
+    technologies: ["Javascript, Node.js, Express, Sequelize, Sass"],
+    githubLink: "https://...",
   },
 ];
 
