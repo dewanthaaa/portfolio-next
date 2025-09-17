@@ -46,7 +46,7 @@ export default function ProjectSlideshow({ screenshots }) {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full ${
-              currentIndex === index ? "bg-white" : "bg-white/50"
+              currentIndex === index ? "bg-gray-700" : "bg-white/70"
             }`}
           />
         ))}

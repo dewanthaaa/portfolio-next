@@ -39,10 +39,10 @@ import menu_black from "./menu-black.png";
 import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
-import web_icon from "./web-icon.png";
-import mobile_icon from "./mobile-icon.png";
-import ui_icon from "./ui-icon.png";
-import graphics_icon from "./graphics-icon.png";
+import backend_icon from "./backend-icon.png";
+import frontend_icon from "./frontend-icon.png";
+import fullstack_icon from "./fullstack-icon.png";
+import ui_ux_icon from "./ui-ux-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
@@ -94,10 +94,10 @@ export const assets = {
   menu_white,
   close_black,
   close_white,
-  web_icon,
-  mobile_icon,
-  ui_icon,
-  graphics_icon,
+  backend_icon,
+  frontend_icon,
+  fullstack_icon,
+  ui_ux_icon,
   right_arrow,
   send_icon,
   right_arrow_bold,
@@ -180,30 +180,31 @@ export const workData = [
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
-    title: "Web design",
+    icon: assets.backend_icon,
+    title: "Backend Development",
     description:
-      "Web development is the process of building, programming and maintaining websites.",
+      "I develop the backend by building secure APIs, managing databases efficiently, and ensuring system stability by following best practices.",
     link: "",
   },
   {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    icon: assets.frontend_icon,
+    title: "Frontend Development",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "I design and develop responsive, user-friendly interfaces by implementing clean code, optimizing performance, and ensuring the best user experience through modern frontend practices.",
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: assets.fullstack_icon,
+    title: "Fullstack Development",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "I build complete web solutions by developing robust backends, crafting intuitive frontends, and ensuring seamless integration between both, following modern fullstack best practices.",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    icon: assets.ui_ux_icon,
+    title: "UI/UX Design",
+    description:
+      "I design intuitive and visually appealing user interfaces while ensuring seamless user experiences through research, wireframing, prototyping, and usability best practices.",
     link: "",
   },
 ];

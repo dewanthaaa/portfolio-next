@@ -19,7 +19,7 @@ export default function SipetikDetail() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col gap-8 max-w-4xl mx-auto">
-        <div className="w-full">
+        <div className="w-full bg-gray-300 px-2 rounded-lg">
           {/* Slideshow */}
           <ProjectSlideshow screenshots={project.screenshots} />
         </div>
