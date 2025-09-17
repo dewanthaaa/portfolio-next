@@ -2,6 +2,7 @@
 import { workData } from "@/assets/assets";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import ProjectSlideshow from "@/app/components/projectslideshow";
 
 export default function SipetikDetail() {
   const params = useParams();
@@ -17,24 +18,35 @@ export default function SipetikDetail() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row gap-8">
-        <div className="md:w-1/2">
-          <Image
-            src={project.bgImage}
-            alt={project.title}
-            width={600}
-            height={600}
-            className="rounded-lg max-w-full object-cover"
-            onError={(e) => {
-              console.error(`Failed to load image: ${project.bgImage}`);
-            }}
-          />
+      <div className="flex flex-col gap-8 max-w-4xl mx-auto">
+        <div className="w-full">
+          {/* Slideshow */}
+          <ProjectSlideshow screenshots={project.screenshots} />
         </div>
-        <div className="md:w-1/2">
+
+        {/* Project Info Section - Full Width */}
+        <div className="w-full">
           <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
-          <p className="text-gray-600 dark:text-gray-300 mb-8">
+          <p className="text-gray-900 dark:text-gray-300 mb-8 leading-relaxed">
             {project.fullDescription || "Lorem ipsum..."}
           </p>
+
+          {/* Technologies Section */}
+          <div className="mb-8">
+            <h2 className="text-xl font-semibold mb-4">Technologies Used</h2>
+            <div className="flex flex-wrap gap-2">
+              {project.technologies.map((tech, index) => (
+                <span
+                  key={index}
+                  className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Github Button */}
           <a
             href={project.githubLink}
             target="_blank"
