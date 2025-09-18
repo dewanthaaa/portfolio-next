@@ -2,6 +2,7 @@
 import { workData } from "@/assets/assets";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { motion } from "motion/react";
 import ProjectSlideshow from "@/app/components/projectslideshow";
 
 export default function SipetikDetail() {
@@ -25,14 +26,24 @@ export default function SipetikDetail() {
         </div>
 
         {/* Project Info Section - Full Width */}
-        <div className="w-full">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="w-full"
+        >
           <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
-          <p className="text-gray-900 dark:text-gray-300 mb-8 leading-relaxed">
+          <p className="text-gray-900 dark:text-gray-300 text-justify mb-8 leading-relaxed">
             {project.fullDescription || "Lorem ipsum..."}
           </p>
 
           {/* Technologies Section */}
-          <div className="mb-8">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="mb-8"
+          >
             <h2 className="text-xl font-semibold mb-4">Technologies Used</h2>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => (
@@ -44,18 +55,21 @@ export default function SipetikDetail() {
                 </span>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Github Button */}
-          <a
+          <motion.a
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
           >
             See on Github
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </div>
     </div>
   );

@@ -26,7 +26,10 @@ export default function Footer({ isDarkMode }) {
         <p>© 2025. Dewantha Simbolon. All Rights Reserved</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li className="flex items-center gap-2">
-            <Image src={assets.github_logo} alt="github logo" />
+            <Image
+              src={!isDarkMode ? assets.github_logo : assets.github_logo_dark}
+              alt="github logo"
+            />
             <a target="_blank" href="https://github.com/dewanthaaa">
               Github
             </a>
@@ -46,7 +49,12 @@ export default function Footer({ isDarkMode }) {
             </a>
           </li>
           <li className="flex items-center gap-2">
-            <Image src={assets.instagram_logo} alt="instagram logo" />
+            <Image
+              src={
+                !isDarkMode ? assets.instagram_logo : assets.instagram_logo_dark
+              }
+              alt="instagram logo"
+            />
             <a target="_blank" href="https://www.instagram.com/dewabukandewa/">
               Instagram
             </a>

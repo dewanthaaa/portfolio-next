@@ -48,9 +48,11 @@ import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import github_logo from "./github-logo.svg";
+import github_logo_dark from "./github-logo-dark.png";
 import linkedin_logo from "./linkedin-logo.svg";
-import linkedin_logo_dark from "./linkedin-dark.svg";
+import linkedin_logo_dark from "./linkedin-logo-dark.png";
 import instagram_logo from "./instagram-logo.svg";
+import instagram_logo_dark from "./instagram-logo-dark.png";
 
 export const assets = {
   user_image,
@@ -103,9 +105,11 @@ export const assets = {
   right_arrow_bold,
   right_arrow_bold_dark,
   github_logo,
+  github_logo_dark,
   linkedin_logo,
   linkedin_logo_dark,
   instagram_logo,
+  instagram_logo_dark,
 };
 
 export const workData = [
@@ -122,7 +126,9 @@ export const workData = [
       "/sipetik-pegawai.png",
       "/sipetik-detail-akun.png",
     ],
-    technologies: ["Javascript, Node.js, Express, Sequelize, Sass"],
+    technologies: [
+      "HTML, CSS, Javascript, React, Node.js, Express.js, Sequelize, Sass, MySQL",
+    ],
     githubLink: "https://...",
   },
   {
@@ -140,7 +146,9 @@ export const workData = [
       "/inventrix-dashboard-admin-2.png",
       "/inventrix-modal.png",
     ],
-    technologies: ["Javascript, Node.js, Express, Sequelize, Sass"],
+    technologies: [
+      "HTML, Tailwind CSS, Javascript, React, Node.js, Express.js, Sequelize, MySQL",
+    ],
     githubLink: "https://...",
   },
   {
@@ -156,7 +164,9 @@ export const workData = [
       "/sixtap-admin-dashboard.png",
       "/sixtap-history-absence.png",
     ],
-    technologies: ["Javascript, Node.js, Express, Sequelize, Sass"],
+    technologies: [
+      "HTML, Javascript, React, Node.js, Express.js, Sequelize, MySQL",
+    ],
     githubLink: "https://...",
   },
   {
@@ -173,7 +183,9 @@ export const workData = [
       "/dewalearning-course.png",
       "/dewalearning-manage-course.png",
     ],
-    technologies: ["Javascript, Node.js, Express, Sequelize, Sass"],
+    technologies: [
+      "HTML, Tailwind CSS, Javascript, React, Node.js, Express.js, Prisma, Zod, MongoDB",
+    ],
     githubLink: "https://...",
   },
 ];
