@@ -122,9 +122,9 @@ export const workData = [
     fullDescription:
       "Sipetik is a web application developed to manage employee data at the Ministry of Foreign Affairs of Indonesia, specifically within the IT and Communications Center, Personnel, and Official Documents Division. It provides features for managing detailed employee information such as leave, allowances, and training history, as well as an interactive dashboard for statistical insights. The project was completed during my internship as part of a three-person team, where I contributed as the backend developer.",
     screenshots: [
-      "/sipetik-dashboard.png",
-      "/sipetik-pegawai.png",
-      "/sipetik-detail-akun.png",
+      "/sipetik/dashboard.png",
+      "/sipetik/pegawai.png",
+      "/sipetik/detail-akun.png",
     ],
     technologies: [
       "HTML, CSS, Javascript, React, Node.js, Express.js, Sequelize, Sass, MySQL",
