@@ -21,6 +21,9 @@ export default function ProjectSlideshow({ screenshots }) {
           src={screenshots[currentIndex]}
           alt={`Screenshot ${currentIndex + 1}`}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority={currentIndex === 0}
+          quality={75}
           className="object-contain rounded-lg"
         />
       </div>
