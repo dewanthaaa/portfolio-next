@@ -137,7 +137,6 @@ export const workData = [
     description: "Inventory Web App",
     bgImage: "/inventrix-thumbnail.png",
     detailUrl: "/work/inventrix",
-
     fullDescription:
       "Inventrix is a web application designed to manage online borrowing of school inventory items such as projectors, cables, and other learning equipment. It features an admin dashboard for managing items, monitoring student borrowings, and confirming requests, as well as a student dashboard to view available items and track borrowing history. The project was developed as a final assignment for a Software Project course by a three-person team, where I contributed as the backend developer.",
     screenshots: [
@@ -149,7 +148,7 @@ export const workData = [
     technologies: [
       "HTML, Tailwind CSS, Javascript, React, Node.js, Express.js, Sequelize, MySQL",
     ],
-    githubLink: "https://...",
+    githubLink: "https://github.com/bayusbkt/inventrix-backend",
   },
   {
     id: "sixtap",
@@ -167,7 +166,7 @@ export const workData = [
     technologies: [
       "HTML, Javascript, React, Node.js, Express.js, Sequelize, MySQL",
     ],
-    githubLink: "https://...",
+    githubLink: "https://github.com/dewanthaaa/sixtap-absence-backend",
   },
   {
     id: "dewa-learning",
@@ -186,7 +185,8 @@ export const workData = [
     technologies: [
       "HTML, Tailwind CSS, Javascript, React, Node.js, Express.js, Prisma, Zod, MongoDB",
     ],
-    githubLink: "https://...",
+    githubLink:
+      "https://github.com/dewanthaaa/Frontend-Learning-Management-System",
   },
 ];
 

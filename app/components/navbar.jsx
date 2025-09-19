@@ -144,7 +144,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode, isDetailPage }) {
             />
           </div>
 
-          {navigationLinks.map((link) => {
+          {navigationLinks.map((link) => (
             <li key={link.href}>
               {isDetailPage ? (
                 <Link
@@ -163,8 +163,8 @@ export default function Navbar({ isDarkMode, setIsDarkMode, isDetailPage }) {
                   {link.label}
                 </a>
               )}
-            </li>;
-          })}
+            </li>
+          ))}
         </ul>
       </nav>
     </>
