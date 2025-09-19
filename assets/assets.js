@@ -140,10 +140,10 @@ export const workData = [
     fullDescription:
       "Inventrix is a web application designed to manage online borrowing of school inventory items such as projectors, cables, and other learning equipment. It features an admin dashboard for managing items, monitoring student borrowings, and confirming requests, as well as a student dashboard to view available items and track borrowing history. The project was developed as a final assignment for a Software Project course by a three-person team, where I contributed as the backend developer.",
     screenshots: [
-      "/inventrix-login.png",
-      "/inventrix-dashboard-admin.png",
-      "/inventrix-dashboard-admin-2.png",
-      "/inventrix-modal.png",
+      "/inventrix/login.png",
+      "/inventrix/dashboard-admin.png",
+      "/inventrix/dashboard-admin-2.png",
+      "/inventrix/modal.png",
     ],
     technologies: [
       "HTML, Tailwind CSS, Javascript, React, Node.js, Express.js, Sequelize, MySQL",
@@ -159,9 +159,9 @@ export const workData = [
     fullDescription:
       "Sixtap is a web-based application that provides automated attendance and transaction services using RFID cards for students of SMK Negeri 6 Jakarta. Developed by a three-person team, I contributed as the backend developer responsible for the attendance system. Key features include RFID-based attendance processing, role-based dashboards (RBAC), and a backend system for managing student data. This project also involved unit testing with Vitest and bottom-up integration testing with Postman, and it served as my undergraduate thesis project.",
     screenshots: [
-      "/sixtap-login.png",
-      "/sixtap-admin-dashboard.png",
-      "/sixtap-history-absence.png",
+      "/sixtap/login.png",
+      "/sixtap/admin-dashboard.png",
+      "/sixtap/history-absence.png",
     ],
     technologies: [
       "HTML, Javascript, React, Node.js, Express.js, Sequelize, MySQL",
@@ -177,10 +177,10 @@ export const workData = [
     fullDescription:
       "Dewa Learning is a web-based learning management system that I developed independently as my first fullstack project, handling both frontend and backend. It features RBAC to separate manager and user roles—managers can manage classes and learning content (videos and texts), while users can access enrolled classes and study materials online. The system also integrates a payment simulation using Midtrans, enabling users to simulate class enrollment and transactions.",
     screenshots: [
-      "/dewalearning-login.png",
-      "/dewalearning-dashboard.png",
-      "/dewalearning-course.png",
-      "/dewalearning-manage-course.png",
+      "/dewalearning/login.png",
+      "/dewalearning/dashboard.png",
+      "/dewalearning/course.png",
+      "/dewalearning/manage-course.png",
     ],
     technologies: [
       "HTML, Tailwind CSS, Javascript, React, Node.js, Express.js, Prisma, Zod, MongoDB",
