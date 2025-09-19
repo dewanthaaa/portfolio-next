@@ -23,7 +23,7 @@ export default function ProjectSlideshow({ screenshots }) {
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority={currentIndex === 0}
-          quality={75}
+          quality={90}
           className="object-contain rounded-lg"
         />
       </div>
